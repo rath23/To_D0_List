@@ -7,6 +7,7 @@ Welcome to My To-Do List App! This app helps you stay organized by managing your
 ## Features
 
 - **Task Creation**: Easily add tasks with titles, descriptions, due dates, and priority levels.
+- **Create Custom List**:You can create a custom list of your own by simply adding /<custom_list_name> to home route.
 - **Task List**: View all your tasks in a clean, organized list format.
 - **Task Editing**: Edit or update tasks as your plans change.
 - **Task Completion**: Mark tasks as completed and watch them move to the done list.
