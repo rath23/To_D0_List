@@ -8,11 +8,10 @@ Welcome to My To-Do List App! This app helps you stay organized by managing your
 
 - **Task Creation**: Easily add tasks with titles, descriptions, due dates, and priority levels.
 - **Task List**: View all your tasks in a clean, organized list format.
-- **Task Details**: Click on a task to view its details, such as due date and description.
 - **Task Editing**: Edit or update tasks as your plans change.
 - **Task Completion**: Mark tasks as completed and watch them move to the done list.
 - **Sorting and Filtering**: Arrange tasks by priority or due date, and apply filters to focus on specific tasks.
-- **Dark Mode**: Enjoy a comfortable task management experience even at night.
+
 
 ## Getting Started
 
