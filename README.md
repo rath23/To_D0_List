@@ -38,7 +38,7 @@ Welcome to My To-Do List App! This app helps you stay organized by managing your
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have ideas for improvements, please submit a pull request. Be sure to follow the [code of conduct](CODE_OF_CONDUCT.md).
+Contributions are welcome! If you find any issues or have ideas for improvements, please submit a pull request. 
 
 ---
 
