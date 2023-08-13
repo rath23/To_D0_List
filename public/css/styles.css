@@ -5,6 +5,15 @@ html {
   font-family: 'helvetica neue';
 }
 
+body{
+  display: flex;
+  justify-content: center;
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
 h1 {
   color: #fff;
   padding: 10px;
@@ -21,6 +30,11 @@ h1 {
 #heading {
   background-color: #A683E3;
   text-align: center;
+}
+
+.one{
+  width: 100%;
+  margin: 0;
 }
 
 .item {
@@ -65,6 +79,7 @@ button {
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
+  padding-top: 6px;
   border-width: 0;
 }
 
