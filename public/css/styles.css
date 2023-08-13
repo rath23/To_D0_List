@@ -109,3 +109,10 @@ footer {
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
+@media screen and (min-width: 480px) {
+  body {
+    height: 100vh;
+    margin: 0;
+  }
+}
