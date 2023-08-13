@@ -1,16 +1,20 @@
 html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-  min-height: 1000px;
+  min-height: 100vh;
   font-family: 'helvetica neue';
 }
 
 body {
+  height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .container {
+  flex-basis: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +26,7 @@ h1 {
 }
 
 .box {
-  max-width: 400px;
+  max-width: 500px;
   margin: 50px auto;
   background: white;
   border-radius: 5px;
@@ -37,6 +41,14 @@ h1 {
 .one {
   width: 100%;
   margin: 0;
+}
+.two{
+  width: 100%;
+  margin: 30px 0px 30px 0px;
+}
+
+.inputClass{
+  margin-right: 100px;
 }
 
 .item {
@@ -112,27 +124,3 @@ footer {
   text-align: center;
 }
 
-
-@media screen and (min-width: 480px) {
-  body {
-    height: 100vh;
-    margin: 0;
-  }
-
-  .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .one {
-    align-self: center;
-    width: 100%;
-    margin: 0;
-  }
-
- 
-
-}
