@@ -133,7 +133,7 @@ app.post("/delete" ,async function (req,res){
   const deletingItem = req.body.checkbox;
   try{
     await Item.deleteOne({_id:deletingItem});
-    res.redirect("/");
+    res.redirect(req.originalUrl);
   }catch(err){
     res.send(err);
   }
