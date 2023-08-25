@@ -13,11 +13,12 @@ body {
   flex-wrap: wrap;
 }
 
-.container {
-  flex-basis: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.container{
+  display:flex;
+  flex-direction:column;
+  flex-basis:100%;
+  max-width:600px;
+  height:500px;
 }
 
 h1 {
@@ -123,4 +124,19 @@ footer {
   color: white;
   text-align: center;
 }
+
+@media (min-width:300px) and (max-width:600px){
+  .container{
+    display:flex;
+    flex-direction:column;
+    flex-basis: auto;
+    max-width:100%;
+    height:100vh;
+  }
+
+  .inputClass{
+    margin: 0;
+  }
+  
+  }
 
