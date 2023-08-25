@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 //const date = require(__dirname + "/date.js");
+const _ = require("lodash");
 
 const app = express();
 
@@ -72,7 +73,7 @@ catch(err){
 
 
 app.get("/:customListName",async function(req,res){
-  const customListName = req.params.customListName;
+  const customListName = _.capitalize(req.params.customListName);
 
 try {
  const foundList = await List.findOne({name:customListName}).exec();
