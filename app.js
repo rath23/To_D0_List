@@ -128,17 +128,28 @@ app.post("/", async function(req, res){
 
 app.post("/delete" ,async function (req,res){
 
-  // there is also a await Model.findByIdAndDelete(id) to delete a doc that matches the id note we don't need ({_id:id})
+  // there is also a await Model.findByIdAndRemove(id) to delete a doc that matches the id note we don't need ({_id:id})
 
   const deletingItem = req.body.checkbox;
+  const listName = req.body.listName;
+  if(listName === "Today"){
   try{
-    await Item.deleteOne({_id:deletingItem});
-    res.redirect(req.originalUrl);
+    //await Item.deleteOne({_id:deletingItem});
+    await Item.findByIdAndRemove(deletingItem);
+    res.redirect("/");
   }catch(err){
     res.send(err);
   }
+}
+else{
+  try{
+  await List.findOneAndUpdate({name:listName},{$pull:{items:{_id:deletingItem}}});
+  res.redirect("/"+listName);
+}catch(err){
+  console.log(err);
+}
+}
 });
-
 
 app.get("/about", function(req, res){
   res.render("about");
