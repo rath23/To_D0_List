@@ -192,6 +192,15 @@ input[type="text"]:focus {
   margin-left: 30px ;
   margin-right: 30px;
 }
+
+.email-lable{
+  margin-right: 45px;
+}
+
+.pass-lable{
+ margin-right: 15px;
+}
+
 footer {
   color: white;
   text-align: center;
