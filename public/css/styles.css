@@ -201,6 +201,18 @@ input[type="text"]:focus {
  margin-right: 15px;
 }
 
+.name-lable{
+  margin-right: 5px;
+}
+
+input.input-class{
+  all:unset;
+  background-color:#fff;
+  outline: black;
+  box-shadow: none;
+  width: 180px;
+}
+
 footer {
   color: white;
   text-align: center;
