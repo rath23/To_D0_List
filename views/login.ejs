@@ -1,0 +1,32 @@
+<%- include ("header") %>
+
+<div class="container">
+  <div class="box one" id="heading">
+    <h1>Login</h1>
+  </div>
+
+  <div class="box two">
+    <% if (message) { %>
+    <p><%= message %></p>
+    <% } %>
+
+    <form action="/login" method="POST">
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" />
+      </div>
+
+      <div class="password">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" />
+      </div>
+
+      <div>
+      <button type="submit" class="btn login">Login</button>
+      <a class="btn register" href="/register" role="button">Register</a>
+    </form>
+  </div>
+  </div>
+
+  <%- include ("footer") %>
+</div>
