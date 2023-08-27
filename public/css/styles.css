@@ -194,11 +194,11 @@ input[type="text"]:focus {
 }
 
 .email-lable{
-  margin-right: 45px;
+  margin-right: 50px;
 }
 
 .pass-lable{
- margin-right: 15px;
+ margin-right: 20px;
 }
 
 .name-lable{
@@ -206,11 +206,20 @@ input[type="text"]:focus {
 }
 
 input.input-class{
+  border: 1px ;
+  border-style: inset;
   all:unset;
   background-color:#fff;
-  outline: black;
-  box-shadow: none;
+  border-radius: 1px;
   width: 180px;
+}
+input[type="text"]:focus.input-class{
+  all:unset;
+  background-color: #fff;
+  border: 1px solid black;
+
+  width: 180px;
+  outline: auto;
 }
 
 footer {
