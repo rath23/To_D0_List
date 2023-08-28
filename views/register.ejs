@@ -5,20 +5,38 @@
   </div>
 
   <div class="box two">
-    <form action="/register" method="POST" >
+    <form action="/register" method="POST">
       <div class="name">
-        <label class="name-lable" for="name" >User Name</label>
-        <input class="input-class"  type="text"  name="userName" autocomplete="off" required/>
+        <label class="name-lable" for="name">User Name</label>
+        <input
+          class="input-class"
+          type="text"
+          name="userName"
+          autocomplete="off"
+          required
+        />
       </div>
 
       <div class="email">
         <label class="email-lable" for="email">Email</label>
-        <input class="email-input" type="email" name="email" autocomplete="off" required/>
+        <input
+          class="email-input"
+          type="email"
+          name="email"
+          autocomplete="off"
+          required
+        />
       </div>
 
       <div class="password">
         <label class="pass-lable" for="password">Password</label>
-        <input class="pass-input" type="password"  name="password" autocomplete="off" required/>
+        <input
+          class="pass-input"
+          type="password"
+          name="password"
+          autocomplete="off"
+          required
+        />
       </div>
 
       <div>
@@ -27,6 +45,5 @@
       </div>
     </form>
   </div>
-
-  <%- include ("footer") %>
 </div>
+  <%- include ("footer") %>

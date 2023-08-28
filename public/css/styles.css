@@ -229,6 +229,9 @@ input[type="text"]:focus.input-class{
 footer {
   color: white;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
